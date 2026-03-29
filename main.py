@@ -13,6 +13,8 @@ HEADERS = {
 
 def get_transactions():
     r = requests.get("https://api.bloxflip.com/user/transactions", headers=HEADERS)
+    print(f"Status code: {r.status_code}")
+    print(f"Response: {r.text[:500]}")
     if r.status_code == 200:
         return r.json()
     return None
@@ -37,6 +39,7 @@ print("Watching for tips...")
 while True:
     data = get_transactions()
     if data:
+        print(f"Got data: {data}")
         for tx in data.get("transactions", []):
             if tx["_id"] not in seen_ids:
                 seen_ids.add(tx["_id"])

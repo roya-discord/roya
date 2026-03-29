@@ -2,7 +2,7 @@ import os
 import requests
 import time
 
-BLOXFLIP_TOKEN = os.environ["BLOXFLIP_WEBHOOK"]
+BLOXFLIP_TOKEN = os.environ["BLOXFLIP_TOKEN"]
 DISCORD_WEBHOOK = os.environ["DISCORD_WEBHOOK"]
 POLL_INTERVAL = 15
 

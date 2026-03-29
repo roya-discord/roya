@@ -2,8 +2,8 @@ import os
 import requests
 import time
 
-BLOXFLIP_TOKEN = os.environ["lBa1Ym_fiqiAvLgWpJj-5fIJ1njLGdxpsIPdYTTrNyM"]
-DISCORD_WEBHOOK = os.environ["https://discord.com/api/webhooks/1487721185256149073/UiqMt3x-EZvvd3SF04oNPjszOOavZgwVCh07_OkEQ1XwKFwCbs95cNjkYAPGpcZBHNqr"]
+BLOXFLIP_TOKEN = os.environ["BLOXFLIP_WEBHOOK"]
+DISCORD_WEBHOOK = os.environ["DISCORD_WEBHOOK"]
 POLL_INTERVAL = 15
 
 HEADERS = {

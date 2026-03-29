@@ -38,7 +38,7 @@ while True:
     data = get_transactions()
     if data:
         for tx in data.get("transactions", []):
-            if tx.get("type") == "tip" and tx["_id"] not in seen_ids:
+            if tx["_id"] not in seen_ids:
                 seen_ids.add(tx["_id"])
                 send_discord_alert(tx)
                 print(f"New tip detected: {tx}")

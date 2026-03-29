@@ -19,6 +19,7 @@ def get_transactions():
 
 def send_discord_alert(tip):
     payload = {
+        "content": "<@1359507148794495006>",
         "embeds": [{
             "title": "💰 New Tip/Gift Received!",
             "color": 0x00ff99,
